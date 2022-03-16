@@ -48,7 +48,7 @@ body {
 #container-footer{
 
   margin-left: 200px;
-  
+
 }
 
 #container{
@@ -65,7 +65,7 @@ a:hover{
 
 .mainheading-font {
 
-  
+
   font-family: Roboto;
 
 }
@@ -81,29 +81,27 @@ a:hover{
 
 .body-flex-container-index {
   display: flex;
-  margin-left: 120px;
-  margin-right: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   flex-direction: column;
   align-items: center;
+
 }
 
 .button{
-  background-color: #000000; 
+  background-color: #000000;
   border-radius: 12px;
   height: 30px;
   width: 150px;
-    
+
+
 }
 
 .button-text{
 
   color: #FF0000;
   font-family: Roboto;
-  
-}
 
-.button-position{
-  margin-inline-start: 40%;
-  
-  margin-bottom: 20px;
 }
