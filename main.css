@@ -53,11 +53,25 @@ body {
 
 #container{
 
-  margin-left: 120px;
-  margin-top: 10px;
+  margin-left: 400px;
+  margin-top: 17px;
+  height: 108px;
+  width: 108px;
+ 
+
 
 
 }
+
+
+
+
+
+
+
+
+
+
 a:hover{
 
   color: #FF0000;
@@ -67,17 +81,48 @@ a:hover{
 
 
   font-family: Roboto;
+  margin-right: auto;
 
 }
 
 .body-flex-container{
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-left: 120px;
   margin-right: 100px;
+  animation-duration: 0.5s;
+  animation-name: slidein;
 
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    
+    width: 100%;
+  }
+}
+
+
+
+.body-flex-container:hover{
+
+  
+  background-color: darkred;
+  color: #FFFFFF;
+  
+
+
+}
+
+
+
+
 
 .body-flex-container-index {
   display: flex;
@@ -106,8 +151,24 @@ a:hover{
 
 }
 
-#api-for-character {
 
-  color: #FF0000;
 
+.button-center{
+
+margin-left: 50%;
 }
+
+#api-for-description-spider, #api-for-description-hulk, #api-for-description-xman, #api-for-description-thor, #api-for-description-abomination, #api-for-description-abomb, #api-for-description-aim, #api-for-description-daredevil, #api-for-description-baron, #api-for-description-captain,#api-for-character-spider, #api-for-character-hulk, #api-for-character-xman, #api-for-character-thor, #api-for-character-abomination, #api-for-character-abomb, #api-for-character-aim, #api-for-character-daredevil, #api-for-character, #api-for-character-captain{
+
+  animation-duration: 10s;
+  animation-name: fadeIn;
+}
+
+
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
