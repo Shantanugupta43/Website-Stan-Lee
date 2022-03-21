@@ -82,6 +82,7 @@ a:hover{
 
   font-family: Roboto;
   margin-right: auto;
+  margin-bottom: 100px;
 
 }
 
@@ -169,6 +170,19 @@ margin-left: 50%;
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
+}
+
+
+#spider-img, #hulk-img, #xman-img, #thor-img, #abomination-img, #abomb-img, #aim-img, #daredevil-img, #baron-img, #captain-img, #falcon-img {
+
+  height: auto;
+  width: auto;
+  
+}
+
+#read-more {
+
+  display: block;
 }
 
 
