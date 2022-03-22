@@ -82,7 +82,7 @@ a:hover{
 
   font-family: Roboto;
   margin-right: auto;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 
 }
 
@@ -108,6 +108,20 @@ a:hover{
     width: 100%;
   }
 }
+
+.body-flex-container{
+  transition: 1s ease;
+  }
+  
+  .body-flex-container:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+  }
+
+
+
 
 
 
@@ -141,9 +155,20 @@ a:hover{
   border-radius: 12px;
   height: 30px;
   width: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 
 }
+
+.alignment {
+
+  margin-left: 40px;
+}
+
+
+
+
 
 .button-text{
 
@@ -159,7 +184,7 @@ a:hover{
 margin-left: 50%;
 }
 
-#api-for-description-spider, #api-for-description-hulk, #api-for-description-xman, #api-for-description-thor, #api-for-description-abomination, #api-for-description-abomb, #api-for-description-aim, #api-for-description-daredevil, #api-for-description-baron, #api-for-description-captain,#api-for-character-spider, #api-for-character-hulk, #api-for-character-xman, #api-for-character-thor, #api-for-character-abomination, #api-for-character-abomb, #api-for-character-aim, #api-for-character-daredevil, #api-for-character, #api-for-character-captain,#api-for-character-falcon, #api-for-description-falcon{
+#api-for-description-spider, #api-for-description-hulk, #api-for-description-xman, #api-for-description-thor, #api-for-description-abomination, #api-for-description-abomb, #api-for-description-aim, #api-for-description-daredevil, #api-for-description-baron, #api-for-description-captain,#api-for-character-spider, #api-for-character-hulk, #api-for-character-xman, #api-for-character-thor, #api-for-character-abomination, #api-for-character-abomb, #api-for-character-aim, #api-for-character-daredevil, #api-for-character-baron, #api-for-character-captain,#api-for-character-falcon, #api-for-description-falcon, #api-for-character-franklin, #api-for-description-franklin, #api-for-character-gwen, #api-for-description-gwen, #container, #api-for-character-hawkeye, #api-for-description-hawkeye, #api-for-character-hela, #api-for-description-hela, #api-for-character-iron, #api-for-description-iron{
 
   animation-duration: 10s;
   animation-name: fadeIn;
@@ -173,16 +198,8 @@ margin-left: 50%;
 }
 
 
-#spider-img, #hulk-img, #xman-img, #thor-img, #abomination-img, #abomb-img, #aim-img, #daredevil-img, #baron-img, #captain-img, #falcon-img {
 
-  height: auto;
-  width: auto;
-  
-}
 
-#read-more {
 
-  display: block;
-}
 
 

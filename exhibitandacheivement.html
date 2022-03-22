@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exhibit and Acheivements</title>
+    
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src ="API.js"></script>
-    <script src ="loadbuttoncontent.js"></script>
+    
+    
 </head>
 <body>
     <img src = "stan.png" class ="logo">
@@ -16,16 +18,19 @@
     <nav class="flex">
 
     <header id = "header">
-    <a class = "navigation">Biography</a>
-    <a class = "navigation">Exhibits&Acheivements</a>
+    <a class = "navigation" href="biography.html">Biography</a>
+    <a class = "navigation" href="exhibitandacheivement.html">Exhibits&Acheivements</a>
     </header>
 
     </nav>
 
+    <article class="mainheading-font">
+    <h2 class = "alignment"><u>Characters</u></h2>
+
     <div class = "body-flex-container">
 
         <article class="mainheading-font">
-            <h2><u>Characters</u></h2>
+            
             <h2 id="api-for-character-spider"></h2>
             <p id="api-for-description-spider"></p>
         </article>
@@ -66,123 +71,14 @@
 
     </div>
 
-    <div class = "body-flex-container">
-
-        <article class="mainheading-font">
-            <h2 id="api-for-character-thor"></h2>
-            <p id="api-for-description-thor"></p>
-        </article>
-        
-        <section id= "container">
-            <img id ="thor-img" alt="thor">
-        </section>
-        
-
-    </div>
-
-    <span id = "read-more">
-
-    <div class = "body-flex-container">
-
-        <article class="mainheading-font">
-            <h2 id="api-for-character-abomination"></h2>
-            <p id="api-for-description-abomination"></p>
-        </article>
-        
-        <section id= "container">
-            <img id ="abomination-img" alt="abomination">
-        </section>
-        
-
-    </div>
-
-    <div class = "body-flex-container">
-
-        <article class="mainheading-font">
-            <h2 id="api-for-character-abomb"></h2>
-            <p id="api-for-description-abomb"></p>
-        </article>
-        
-        <section id= "container">
-            <img id ="abomb-img" alt="abomb">
-        </section>
-        
-
-    </div>
-
-    <div class = "body-flex-container">
-
-        <article class="mainheading-font">
-            <h2 id="api-for-character-aim"></h2>
-            <p id="api-for-description-aim"></p>
-        </article>
-        <section id= "container">
-            <img id ="aim-img" alt="aim">
-        </section>
-        
-
-    </div>
-
-
-    <div class = "body-flex-container">
-
-        <article class="mainheading-font">
-            <h2 id="api-for-character-daredevil"></h2>
-            <p id="api-for-description-daredevil"></p>
-        </article>
-        <section id= "container">
-            <img id ="daredevil-img" alt="daredevil">
-        </section>
-        
-
-    </div>
-
-    <div class = "body-flex-container">
-
-        <article class="mainheading-font">
-            <h2 id="api-for-character-baron"></h2>
-            <p id="api-for-description-baron"></p>
-        </article>
-        <section id= "container">
-            <img id ="baron-img" alt="baron">
-        </section>
-        
-
-    </div>
-
-    <div class = "body-flex-container">
-
-        <article class="mainheading-font">
-            <h2 id="api-for-character-captain"></h2>
-            <p id="api-for-description-captain"></p>
-        </article>
-        <section id= "container">
-            <img id ="captain-img" alt="captain">
-        </section>
-        
-
-    </div>
-
-    <div class = "body-flex-container">
-
-        <article class="mainheading-font">
-            <h2 id="api-for-character-falcon"></h2>
-            <p id="api-for-description-falcon"></p>
-        </article>
-        <section id= "container">
-            <img id ="falcon-img" alt="falcon">
-        </section>
-        
-
-    </div>
-
-    </span>
 
 
 <div class = "button-center">
-        <button class="button">
+    <a href="charactermore.html">
+        <button class ="button">
             <b class="button-text">Load More</b>
         </button>
+    </a>
 </div>
 
 

@@ -169,3 +169,80 @@ return data.json();
     document.getElementById('api-for-character-falcon').innerHTML=falcon;
     document.getElementById('api-for-description-falcon').innerHTML=falcon_des;
 });
+
+fetch('https://gateway.marvel.com/v1/public/characters?nameStartsWith=f&limit=100&ts=1&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[31].name);
+    franklin = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[31].description);
+    franklin_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[31].thumbnail.path+'/portrait_medium.jpg');
+    franklin_img = JSON.parse(char_img1);
+    document.getElementById('franklin-img').src=franklin_img;
+    document.getElementById('api-for-character-franklin').innerHTML=franklin;
+    document.getElementById('api-for-description-franklin').innerHTML=franklin_des;
+});
+
+fetch('https://gateway.marvel.com/v1/public/characters?nameStartsWith=g&limit=100&ts=1&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[60].name);
+    gwen = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[60].description);
+    gwen_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[60].thumbnail.path+'/portrait_medium.jpg');
+    gwen_img = JSON.parse(char_img1);
+    document.getElementById('gwen-img').src=gwen_img;
+    document.getElementById('api-for-character-gwen').innerHTML=gwen;
+    document.getElementById('api-for-description-gwen').innerHTML=gwen_des;
+});
+
+fetch('https://gateway.marvel.com/v1/public/characters?nameStartsWith=h&limit=100&ts=1&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[22].name);
+    hawkeye = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[22].description);
+    hawkeye_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[22].thumbnail.path+'/portrait_medium.jpg');
+    hawkeye_img = JSON.parse(char_img1);
+    document.getElementById('hawkeye-img').src=hawkeye_img;
+    document.getElementById('api-for-character-hawkeye').innerHTML=hawkeye;
+    document.getElementById('api-for-description-hawkeye').innerHTML=hawkeye_des;
+});
+
+
+fetch('https://gateway.marvel.com/v1/public/characters?nameStartsWith=h&limit=100&ts=1&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[25].name);
+    hela = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[25].description);
+    hela_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[25].thumbnail.path+'/portrait_medium.jpg');
+    hela_img = JSON.parse(char_img1);
+    document.getElementById('hela-img').src=hela_img;
+    document.getElementById('api-for-character-hela').innerHTML=hela;
+    document.getElementById('api-for-description-hela').innerHTML=hela_des;
+});
+
+
+fetch('https://gateway.marvel.com/v1/public/characters?nameStartsWith=i&limit=100&ts=1&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[28].name);
+    iron = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[28].description);
+    iron_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[28].thumbnail.path+'/portrait_medium.jpg');
+    iron_img = JSON.parse(char_img1);
+    document.getElementById('iron-img').src=iron_img;
+    document.getElementById('api-for-character-iron').innerHTML=iron;
+    document.getElementById('api-for-description-iron').innerHTML=iron_des;
+});
