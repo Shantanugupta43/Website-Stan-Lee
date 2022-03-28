@@ -296,20 +296,237 @@ return data.json();
 });
 
 
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[50].title);
+    marvelcom = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[50].description);
+    marvelcom_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[50].thumbnail.path+'/portrait_medium.jpg');
+    marvelcom_img = JSON.parse(char_img1);
+    document.getElementById('marvelcomic-img').src=marvelcom_img;
+    document.getElementById('api-for-comic-marvel').innerHTML=marvelcom;
+    document.getElementById('api-for-descomic-marvel').innerHTML=marvelcom_des;
+});
+
+
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[51].title);
+    marvelviscom = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[51].description);
+    marvelviscom_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[51].thumbnail.path+'/portrait_medium.jpg');
+    marvelviscom_img = JSON.parse(char_img1);
+    document.getElementById('marvelviscomic-img').src=marvelviscom_img;
+    document.getElementById('api-for-comic-marvelvis').innerHTML=marvelviscom;
+    document.getElementById('api-for-descomic-marvelvis').innerHTML=marvelviscom_des;
+});
+
+
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[54].title);
+    spideromcom = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[54].description);
+    spideromcom_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[54].thumbnail.path+'/portrait_medium.jpg');
+    spideromcom_img = JSON.parse(char_img1);
+    document.getElementById('spideromcomic-img').src=spideromcom_img;
+    document.getElementById('api-for-comic-spiderom').innerHTML=spideromcom;
+    document.getElementById('api-for-descomic-spiderom').innerHTML=spideromcom_des;
+});
+
+
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[59].title);
+    furycom = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[59].description);
+    furycom_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[59].thumbnail.path+'/portrait_medium.jpg');
+    furycom_img = JSON.parse(char_img1);
+    document.getElementById('furycomic-img').src=furycom_img;
+    document.getElementById('api-for-comic-fury').innerHTML=furycom;
+    document.getElementById('api-for-descomic-fury').innerHTML=furycom_des;
+});
+
+
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[58].title);
+    marveltailscom = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[58].description);
+    marveltailscom_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[58].thumbnail.path+'/portrait_medium.jpg');
+    marveltailscom_img = JSON.parse(char_img1);
+    document.getElementById('marveltailscomic-img').src=marveltailscom_img;
+    document.getElementById('api-for-comic-marveltails').innerHTML=marveltailscom;
+    document.getElementById('api-for-descomic-marveltails').innerHTML=marveltailscom_des;
+});
+
+
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[64].title);
+    hulkcom = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[64].description);
+    hulkcom_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[64].thumbnail.path+'/portrait_medium.jpg');
+    hulkcom_img = JSON.parse(char_img1);
+    document.getElementById('hulkcomic-img').src=hulkcom_img;
+    document.getElementById('api-for-comic-hulk').innerHTML=hulkcom;
+    document.getElementById('api-for-descomic-hulk').innerHTML=hulkcom_des;
+});
+
+
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[65].title);
+    drstrangecom = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[65].description);
+    drstrangecom_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[65].thumbnail.path+'/portrait_medium.jpg');
+    drstrangecom_img = JSON.parse(char_img1);
+    document.getElementById('drstrangecomic-img').src=drstrangecom_img;
+    document.getElementById('api-for-comic-drstrange').innerHTML=drstrangecom;
+    document.getElementById('api-for-descomic-drstrange').innerHTML=drstrangecom_des;
+});
+
+
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[69].title);
+    xmancom = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[69].description);
+    xmancom_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[69].thumbnail.path+'/portrait_medium.jpg');
+    xmancom_img = JSON.parse(char_img1);
+    document.getElementById('xmancomic-img').src=xmancom_img;
+    document.getElementById('api-for-comic-xman').innerHTML=xmancom;
+    document.getElementById('api-for-descomic-xman').innerHTML=xmancom_des;
+});
+
+
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[70].title);
+    humancom = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[70].description);
+    humancom_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[70].thumbnail.path+'/portrait_medium.jpg');
+    humancom_img = JSON.parse(char_img1);
+    document.getElementById('humancomic-img').src=humancom_img;
+    document.getElementById('api-for-comic-human').innerHTML=humancom;
+    document.getElementById('api-for-descomic-human').innerHTML=humancom_des;
+});
+
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[73].title);
+    secretcom = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[73].description);
+    secretcom_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[73].thumbnail.path+'/portrait_medium.jpg');
+    secretcom_img = JSON.parse(char_img1);
+    document.getElementById('secretcomic-img').src=secretcom_img;
+    document.getElementById('api-for-comic-secret').innerHTML=secretcom;
+    document.getElementById('api-for-descomic-secret').innerHTML=secretcom_des;
+});
+
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[76].title);
+    antcom = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[76].description);
+    antcom_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[76].thumbnail.path+'/portrait_medium.jpg');
+    antcom_img = JSON.parse(char_img1);
+    document.getElementById('antcomic-img').src=antcom_img;
+    document.getElementById('api-for-comic-ant').innerHTML=antcom;
+    document.getElementById('api-for-descomic-ant').innerHTML=antcom_des;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 fetch('https://gateway.marvel.com:443/v1/public/series?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
 
 return data.json();
 }).then((completedata)=>{
-    char_name1 = JSON.stringify(completedata.data.results[7].title);
-    amazingfanser = JSON.parse(char_name1);
-    char_des1 = JSON.stringify(completedata.data.results[7].description);
-    amazingfanser_des = JSON.parse(char_des1);
-    char_img1 = JSON.stringify(completedata.data.results[7].thumbnail.path+'/portrait_medium.jpg');
-    amazingfanser_img = JSON.parse(char_img1);
-    document.getElementById('amazingfanseries-img').src=amazingfanser_img;
-    document.getElementById('api-for-series-amazingfan').innerHTML=amazingfanser;
-    document.getElementById('api-for-desseries-amazingfan').innerHTML=amazingfanser_des;
+    char_name1 = JSON.stringify(completedata.data.results[69].title);
+    dareser = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[69].description);
+    dareser_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[69].thumbnail.path+'/portrait_medium.jpg');
+    dareser_img = JSON.parse(char_img1);
+    document.getElementById('dareseries-img').src=dareser_img;
+    document.getElementById('api-for-series-dare').innerHTML=dareser;
+    document.getElementById('api-for-desseries-dare').innerHTML=dareser_des;
 });
 
 
@@ -343,6 +560,76 @@ return data.json();
     document.getElementById('api-for-series-avenger').innerHTML=avengerser;
     document.getElementById('api-for-desseries-avenger').innerHTML=avengerser_des;
 });
+
+fetch('https://gateway.marvel.com:443/v1/public/series?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[47].title);
+    captainser = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[47].description);
+    captainser_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[47].thumbnail.path+'/portrait_medium.jpg');
+    captainser_img = JSON.parse(char_img1);
+    document.getElementById('captainseries-img').src=captainser_img;
+    document.getElementById('api-for-series-captain').innerHTML=captainser;
+    document.getElementById('api-for-desseries-captain').innerHTML=captainser_des;
+});
+
+
+fetch('https://gateway.marvel.com:443/v1/public/series?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+
+return data.json();
+}).then((completedata)=>{
+    char_name1 = JSON.stringify(completedata.data.results[77].title);
+    deadpoolser = JSON.parse(char_name1);
+    char_des1 = JSON.stringify(completedata.data.results[77].description);
+    deadpoolser_des = JSON.parse(char_des1);
+    char_img1 = JSON.stringify(completedata.data.results[77].thumbnail.path+'/portrait_medium.jpg');
+    deadpoolser_img = JSON.parse(char_img1);
+    document.getElementById('deadpoolseries-img').src=deadpoolser_img;
+    document.getElementById('api-for-series-deadpool').innerHTML=deadpoolser;
+    document.getElementById('api-for-desseries-deadpool').innerHTML=deadpoolser_des;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 fetch('https://gateway.marvel.com:443/v1/public/events?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
 
@@ -389,3 +676,5 @@ return data.json();
     document.getElementById('api-for-events-evolve').innerHTML=evolveeve;
     document.getElementById('api-for-desevents-evolve').innerHTML=evolveeve_des;
 });
+
+
