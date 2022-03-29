@@ -97,11 +97,11 @@ a:hover{
 }
 
 
-.body-flex-container{
+.body-flex-container,img{
   transition: 1s ease;
   }
   
-  .body-flex-container:hover{
+  .body-flex-container:hover,img:hover{
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
