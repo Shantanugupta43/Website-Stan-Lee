@@ -129,8 +129,8 @@ a:hover{
 
 .body-flex-container-index {
   display: flex;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 350px;
+  margin-right: 350px;
   margin-top: 15px;
   margin-bottom: 15px;
   flex-direction: column;
