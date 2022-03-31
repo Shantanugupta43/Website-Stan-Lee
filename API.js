@@ -267,17 +267,17 @@ return data.json();
 });
 
 
-fetch('https://gateway.marvel.com:443/v1/public/comics?titleStartsWith=Spider-Man&ts=1&limit=100&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&titleStartsWith=Spider-Man&ts=1&limit=100&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
 
 return data.json();
 }).then((completedata)=>{
-    char_name1 = JSON.stringify(completedata.data.results[98].title);
+    char_name1 = JSON.stringify(completedata.data.results[2].title);
     spidercom = JSON.parse(char_name1);
-    char_des1 = JSON.stringify(completedata.data.results[98].description);
+    char_des1 = JSON.stringify(completedata.data.results[2].description);
     spidercom_des = JSON.parse(char_des1);
-    char_img1 = JSON.stringify(completedata.data.results[98].thumbnail.path+'/portrait_medium.jpg');
+    char_img1 = JSON.stringify(completedata.data.results[2].thumbnail.path+'/portrait_medium.jpg');
     spidercom_img = JSON.parse(char_img1);
-    comisbn = JSON.stringify(completedata.data.results[98].isbn); 
+    comisbn = JSON.stringify(completedata.data.results[2].isbn); 
     spidercomisbn = JSON.parse(comisbn);
     document.getElementById('api-for-isbn-spider').innerHTML=spidercomisbn;
     document.getElementById('spidercomic-img').src=spidercom_img;
@@ -286,17 +286,17 @@ return data.json();
 });
 
 
-fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&ts=1&limit=30&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
+fetch('https://gateway.marvel.com:443/v1/public/comics?creators=Stan-Lee%2C30&limit=80&titleStartsWith=Fantastic&ts=1&limit=100&apikey=15a342a6687d10453e0e9a634cf66302&hash=1aa81eca0614de5bd80a3567e2e7e73f').then((data)=>{
 
 return data.json();
 }).then((completedata)=>{
-    char_name1 = JSON.stringify(completedata.data.results[57].title);
+    char_name1 = JSON.stringify(completedata.data.results[20].title);
     fantasticcom = JSON.parse(char_name1);
-    char_des1 = JSON.stringify(completedata.data.results[57].description);
+    char_des1 = JSON.stringify(completedata.data.results[20].description);
     fantasticcom_des = JSON.parse(char_des1);
-    char_img1 = JSON.stringify(completedata.data.results[57].thumbnail.path+'/portrait_medium.jpg');
+    char_img1 = JSON.stringify(completedata.data.results[20].thumbnail.path+'/portrait_medium.jpg');
     fantasticcom_img = JSON.parse(char_img1);
-    comisbn = JSON.stringify(completedata.data.results[57].isbn); 
+    comisbn = JSON.stringify(completedata.data.results[20].isbn); 
     fantasticcomisbn = JSON.parse(comisbn);
     document.getElementById('api-for-isbn-fantastic').innerHTML=fantasticcomisbn;
     document.getElementById('fantasticcomic-img').src=fantasticcom_img;
